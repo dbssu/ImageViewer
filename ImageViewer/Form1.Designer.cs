@@ -55,10 +55,11 @@
             this.btnPrev.TabIndex = 1;
             this.btnPrev.Text = "이전";
             this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // lblNum
             // 
-            this.lblNum.Font = new System.Drawing.Font("굴림", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblNum.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblNum.Location = new System.Drawing.Point(119, 163);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(44, 58);
@@ -74,6 +75,7 @@
             this.btnNext.TabIndex = 4;
             this.btnNext.Text = "다음";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // imgList
             // 
@@ -134,6 +136,7 @@
             this.Controls.Add(this.picImg);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picImg)).EndInit();
             this.ResumeLayout(false);
 
